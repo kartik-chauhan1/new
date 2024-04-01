@@ -1,0 +1,52 @@
+/* Universal Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Root Variables */
+:root {
+  --primary: #0d171f;
+  --second: #0998a8;
+  --bgcolor: #192938;
+}
+
+/* Typography Styles */
+h1, h2, h4, p {
+  color: #ffffffff;
+}
+
+/* Body Styles */
+body {
+  position: relative;
+  background: var(--bgcolor);
+  font-family: 'Roboto', sans-serif;
+  width: 100%;
+  min-height: 100vh;
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+/* Media Query for Responsive Layout */
+@media screen and (max-width: 768px) {
+  body {
+    font-size: 16px; /* Adjust font size for smaller screens */
+  }
+  
+  /* Example of adjusting styles for smaller screens */
+  h1 {
+    font-size: 2rem; /* Decrease heading font size */
+  }
+  
+  h2 {
+    font-size: 1.5rem; /* Decrease heading font size */
+  }
+  
+  h4 {
+    font-size: 1.2rem; /* Decrease heading font size */
+  }
+  
+  p {
+    font-size: 1rem; /* Decrease paragraph font size */
+  }
+}
